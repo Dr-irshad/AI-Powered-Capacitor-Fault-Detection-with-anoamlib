@@ -15,7 +15,7 @@ To get started, clone the repository and install the required dependencies:
 
 ```sh
 git clone https://github.com/Dr-irshad/AI-Powered-Capacitor-Fault-Detection-with-anoamlib.git
-cd capacitor-anomaly-detection
+cd AI-Powered-Capacitor-Fault-Detection-with-anoamlib
 pip install -r requirements.txt
 ```
 
