@@ -1,0 +1,5 @@
+model: DREAM
+enable_sspcab: False
+sspcab_lambda: 0.1
+anomaly_source_path: 
+beta: [0.1,1.0]

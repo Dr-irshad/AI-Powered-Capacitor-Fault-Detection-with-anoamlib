@@ -1,0 +1,5 @@
+model: CS-Flow
+cross_conv_hidden_channels: 1024
+n_coupling_blocks: 4
+clamp: 3
+num_channels: 3

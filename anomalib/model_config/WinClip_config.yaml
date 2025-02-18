@@ -1,0 +1,5 @@
+model: WinClip
+class_name: '{normal [defect free components], anomalous [defective components]}'
+k_shot: 4
+scales: [2,3]
+few_shot_source: C:/Users/hliu/Downloads/latest_wisio/wisio/data/processed/face1_4shot

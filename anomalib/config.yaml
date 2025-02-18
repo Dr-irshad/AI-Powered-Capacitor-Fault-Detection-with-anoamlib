@@ -1,0 +1,39 @@
+task: anomaly_detection
+model: anomalib
+client: Protechnic
+dataset: example.example_dataset_binary
+partition: example.example_dataset.original
+experiment_name: example_example_dataset_Padim_ # <client>_<dataset>_<pipeline>
+train_run_name: example_example_dataset_Padim
+train_run_desc: Test for pipeline
+inference_run_name: testing
+inference_run_desc: na
+
+train_param:
+  #Padim,EfficientAd,Stfpm,Ganomaly,Cfa,Cflow,Csflow,Dfkde,Dfm,Draem,Fastflow,Patchcore,ReverseDistillation,Rkde,Uflow,Dsr
+  anomalib_model: Padim
+  #For Folder
+  normal_dir: Normal
+  abnormal_dir: Defective
+  #normal dataset used for testing, could be None
+  normal_test_dir: normal_test
+  train_batch_size: 32
+  eval_batch_size: 32
+  val_split_ratio: 0.2
+  task: 'classification'
+  mask_dir:
+  seed: 4
+  val_split_mode: 'from_test'
+  image_size: 256
+  #For Engine
+  callbacks: None
+  normalization: NormalizationMethod.MIN_MAX
+  threshold: F1AdaptiveThreshold
+  image_metrics: ["AUROC", 'AUPR']
+  pixel_metrics: None
+  max_epochs: 1
+  devices: 1
+  #accelerator could be 'auto'/'cpu'/'gpu'
+  accelerator: 'gpu'
+  num_sanity_val_steps: 0
+

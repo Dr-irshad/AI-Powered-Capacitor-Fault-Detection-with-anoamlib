@@ -1,0 +1,12 @@
+model: Ganomaly
+batch_size: 32
+n_features: 64
+latent_vec_size: 100
+extra_layers: 0
+add_final_conv_layer: True
+wadv: 1
+wcon: 50
+wenc: 1
+lr: 0.0002
+beta1: 0.5
+beta2: 0.999

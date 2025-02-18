@@ -1,0 +1,3 @@
+model: Reverse_Distillation
+backbone: wide_resnet50_2
+layers: ['layer1','layer2','layer3']

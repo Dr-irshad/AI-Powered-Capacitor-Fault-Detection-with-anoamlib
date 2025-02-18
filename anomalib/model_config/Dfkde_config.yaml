@@ -1,0 +1,5 @@
+model: DFKDE
+backbone: resnet18
+layers: ['layer4']
+n_pca_components: 16
+max_training_points: 40000

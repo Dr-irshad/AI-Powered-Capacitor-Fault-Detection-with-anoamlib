@@ -1,0 +1,4 @@
+model: Padim
+backbone: resnet18
+Layers: ['layer1','layer2','layer3']
+n_features: 
